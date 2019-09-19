@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.font-style{
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    width: 20rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    box-shadow: .5rem .5rem 3rem rbga(0,0,0,0.2);
+    padding: .5rem .5rem;
+    border-radius: 2%;
+    border: 0.1rem solid #DCDADA;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.profile-img{
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card h3{
+    margin: 1.5rem 0;
+}
+
+.job-title{
+    font-weight: 200;
+}
+
+.about{
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 1rem;
+        transition: transform .2s;
+    }
+}
