@@ -1,1 +1,1 @@
-# djtable.github.io
+# DJTable
