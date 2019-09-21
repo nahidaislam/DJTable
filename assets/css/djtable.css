@@ -7,6 +7,10 @@
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 3px;
 }
+.paragraph-font{
+  font-family: "Times New Roman", Times, serif;
+  font-style:italic;
+}
 #project-title{
   text-align: center;
   margin-top: 10rem;
@@ -14,44 +18,6 @@
 #sub-title{
   font-weight: bold;
   color: white;
-}
-.card-wrapper{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.card{
-    width: 20rem;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: .5rem .5rem 3rem rbga(0,0,0,0.2);
-    padding: .5rem .5rem;
-    border-radius: 2%;
-}
-
-.card:hover{
-    transform: scale(1.05);
-}
-
-.profile-img{
-    width: 9rem;
-    height: 9rem;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.card h3{
-    margin: 1.5rem 0;
-}
-
-.job-title{
-    font-weight: 200;
-}
-
-.about{
-    font-style: italic;
-    text-align: center;
 }
 
 /* Demo Video */
@@ -85,6 +51,49 @@
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+/* Technology-image */
+
+.techno-img{
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+}
+
+/* The team */
+.card-wrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card{
+  width: 20rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: .5rem .5rem 3rem rbga(0,0,0,0.2);
+  padding: .5rem .5rem;
+  border-radius: 2%;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.profile-img{
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card h3{
+  margin: 1.5rem 0;
+}
+
+.job-title{
+  font-weight: bold;
 }
 
 @-webkit-keyframes fade {
