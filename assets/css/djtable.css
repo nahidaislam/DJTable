@@ -42,7 +42,7 @@
   padding-bottom: 5rem;
 }
 .slideshow-button{
-  margin-left:6rem;
+  margin-left: 12rem;
 }
 
 /* Fading animation */
@@ -59,6 +59,11 @@
   width: 9rem;
   height: 9rem;
   object-fit: cover;
+}
+.pros-pic{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
 }
 
 /* The team */
