@@ -71,15 +71,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 .card{
   width: 20rem;
-  display:flex;
+  height: 30rem;
+  /* display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-shadow: .5rem .5rem 3rem rbga(0,0,0,0.2);
-  padding: .5rem .5rem;
+  justify-content: center; */
+  /* box-shadow: .5rem .5rem 3rem rbga(0,0,0,0.2); */
   border-radius: 2%;
 }
 
@@ -99,6 +100,10 @@
 
 .job-title{
   font-weight: bold;
+}
+
+.linkedin{
+  text-align: center;
 }
 
 @-webkit-keyframes fade {
