@@ -70,39 +70,6 @@
 }
 
 /* The team */
-/* .card-wrapper{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 3rem;
-}
-.card{
-  width: 20rem;
-  height: 35rem;
-  border-radius: 2%;
-}
-
-.card:hover{
-  transform: scale(1.05);
-}
-
-.profile-img{
-  width: 9rem;
-  height: 9rem;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.card h3{
-  margin: 1.5rem 0;
-}
-
-.job-title{
-  font-weight: bold;
-}
-
-.linkedin{
-  text-align: center;
-} */
 .card-wrapper
 {
 	display: grid;
@@ -116,7 +83,6 @@
 {
 	position: relative;
 	background: #060c21;
-	display: flex;
 	justify-content: center;
 	align-items: center;
   border: 1px solid #000;
@@ -171,7 +137,7 @@
 .content
 {
   padding: 20px;
-  
+  margin-top: 3rem;
 }
 /* .card:hover
 {
@@ -193,6 +159,13 @@
   border-radius: 50%;
 }
 
+.contacts{
+  /* float: right; */
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
