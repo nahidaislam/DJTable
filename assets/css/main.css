@@ -3879,6 +3879,13 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: 80% 100%;
 	}
+	#gallery {
+		background-attachment: fixed;
+		background-image: url("images/exintro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 80% 100%;
+	}
 
 		#intro p {
 			font-size: 1.25em;
