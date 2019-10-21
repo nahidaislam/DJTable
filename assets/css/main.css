@@ -3248,7 +3248,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #953d75;
 		}
 
 		.wrapper.style2-alt {
@@ -3298,7 +3298,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper.fullscreen {
-					padding: 2em 0;
+					
 					min-height: 0;
 				}
 
@@ -3888,14 +3888,6 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
-			@media screen and (max-width: 980px) {
-
-				#intro p br {
-					display: none;
-				}
-
-			}
-
 			@media screen and (max-width: 736px) {
 
 				#intro p {
@@ -3907,8 +3899,11 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#intro {
+				/* background-attachment: scroll; */
+				/* background-size: 100% 100%; */
 				background-attachment: scroll;
-				background-size: 100% 100%;
+				background-size: 90% 50%;
+				background-position: center;
 			}
 
 		}
