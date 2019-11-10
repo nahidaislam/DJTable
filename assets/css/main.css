@@ -3894,11 +3894,6 @@ input, select, textarea {
 		/* background-position: top right; */
 		/* background-size: 80% 100%; */
 	}
-	#gallery {
-		background-image: url("images/exintro.svg");
-
-	}
-
 		#intro p {
 			font-size: 1.25em;
 		}
