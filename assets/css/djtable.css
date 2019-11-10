@@ -1,70 +1,170 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.font-style{
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 3px;
+.font-style {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 3px;
 }
-.paragraph-font{
+.paragraph-font {
   letter-spacing: 0.5px;
   color: #f4f2f2;
   font-size: 1rem;
 }
-#project-title{
+#project-title {
   text-align: center;
   margin-top: 10rem;
 }
-#sub-title{
+#sub-title {
   font-weight: bold;
   color: white;
 }
 
 /* Demo Video */
-.vid-container{
+.vid-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  height:0;
+  height: 0;
   margin-right: 2rem;
-
 }
-.vid-container iframe{
+.vid-container iframe {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 /* image-show*/
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+.images {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 300px;
+  height: 200px;
 }
 
+.images:hover {
+  opacity: 0.7;
+}
+.img-container {
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 150%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* .row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+} */
+
 /* Create three equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
+/* .column {
+  -ms-flex: 25%; 
   flex: 25%;
   max-width: 50%;
   padding: 0 4px;
-}
+} */
 
-.column img {
+/* .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 .title-container {
   position: relative;
-}
+} */
 /* Fading animation */
-.fade {
+/* .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -75,7 +175,7 @@
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
   width: 100%;
   transition: .5s ease;
@@ -88,108 +188,95 @@
 
 .title-container:hover .overlay {
   opacity: 1;
-}
-
+} */
 
 /* Technology-image */
 
-.techno-img{
+.techno-img {
   width: 9rem;
   height: 9rem;
   object-fit: cover;
 }
-.pros-pic{
+.pros-pic {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
 }
 
 /* The team */
-.card-wrapper
-{
+.card-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-	grid-template-rows: auto;
+  grid-template-rows: auto;
   grid-gap: 0 20px;
   /* flex-direction: column;
   margin-bottom: 3rem; */
-  
 }
-.card-wrapper .card
-{
-	position: relative;
-	background: #060c21;
-	justify-content: center;
-	/* align-items: center; */
+.card-wrapper .card {
+  position: relative;
+  background: #060c21;
+  justify-content: center;
+  /* align-items: center; */
   border: 1px solid #000;
   width: 20rem;
   height: 35rem;
   margin: 1rem;
-
 }
-.card-wrapper .card:before
-{
-	content: '';
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	right: -2px;
-	bottom: -2px;
-	background: #fff;
-	transform: skew(1deg,1deg);
-	z-index: -1;
+.card-wrapper .card:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  transform: skew(1deg, 1deg);
+  z-index: -1;
 }
-.card-wrapper .card:nth-child(1):before
-{
-	background: linear-gradient(315deg,#89ff00,#00bcd4);
+.card-wrapper .card:nth-child(1):before {
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
 }
-.card-wrapper .card:nth-child(2):before
-{
-	background: linear-gradient(315deg,#89ff00,#00bcd4);
+.card-wrapper .card:nth-child(2):before {
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
 }
-.card-wrapper .card:nth-child(3):before
-{
-	background: linear-gradient(315deg,#89ff00,#00bcd4);
+.card-wrapper .card:nth-child(3):before {
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
 }
-.card-wrapper .card:nth-child(4):before
-{
-	background: linear-gradient(315deg,#89ff00,#00bcd4);
+.card-wrapper .card:nth-child(4):before {
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
 }
-.card-wrapper .card:nth-child(5):before
-{
-	background: linear-gradient(315deg,#89ff00,#00bcd4);
+.card-wrapper .card:nth-child(5):before {
+  background: linear-gradient(315deg, #89ff00, #00bcd4);
 }
-.card-wrapper .card:after
-{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background: rgba(255,255,255,0.05);
-	pointer-events: none;
+.card-wrapper .card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
 }
-.content
-{
+.content {
   padding: 20px;
   margin-top: 3rem;
 }
 
-.profile-img{
+.profile-img {
   width: 9rem;
   height: 9rem;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.contacts{
+.contacts {
   position: absolute;
   bottom: 8px;
   right: 16px;
 }
 
-.mail{
+.mail {
   position: absolute;
   bottom: 10px;
   right: 55px;
@@ -212,22 +299,28 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
   }
-
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -236,10 +329,8 @@
     flex: 50%;
     max-width: 50%;
   }
-  .card-wrapper .card
-  {
+  .card-wrapper .card {
     width: 17.5rem;
     height: 36rem;
   }
 }
-

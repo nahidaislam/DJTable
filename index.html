@@ -36,7 +36,6 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Intro -->
 					<section id="intro" class="wrapper fullscreen fade-up">
 						<div class="inner">
@@ -44,7 +43,7 @@
 								<h1>D J T a b l e</h1>
 								<p id="sub-title" >a collaborative music experience for useless millennials who can’t actually play music.</p>
 							</div>
-							<ul class="actions center">
+							<ul class="actions">
 								<a href="https://github.com/AugustinBariant/DJTable" target="_blank" class="button scrolly">GitHub</a>
 							</ul>
 						</div>
@@ -131,63 +130,28 @@
 					<section id="four" class="wrapper style4 fullscreen fade-up">
 						<div class="inner">
 							<h2 class="font-style">Photo gallery</h2>
-							<div class="row"> 
-								<div class="column">
-									<div class="title-container">
-										<img src="images/process/bang.jpg" class="image">
-										<div class="overlay">Hello world demo</div>
-									</div>
-									<div class="title-container">
-										<img src="images/process/pic4.jpg" style="width:100%">
-										<div class="overlay">Graphics for hello world demo</div>
-									</div>
-									<div class="title-container">
-											<img src="images/process/pic3.jpg" style="width:100%">
-										<div class="overlay">First successful 3D knob</div>
-									</div>
-								</div>
-								<div class="column">
-									<div class="title-container">
-											<img src="images/process/pic1.jpg" style="width:100%">
-										<div class="overlay">Testing before Forskar Fredag</div>
-									</div>
-									<div class="title-container">
-											<img src="images/process/pic2.jpeg" style="width:100%">
-										<div class="overlay">Two tired members</div>
-									</div>
-									<div class="title-container">
-											<img src="images/process/pic6.jpg" style="width:100%">
-										<div class="overlay">Inspiring high school students</div>
-									</div>
-									<div class="title-container">
-											<img src="images/process/pic9.jpg" style="width:100%">
-										<div class="overlay">It's okay to make mistakes</div>
-									</div>
-								</div>  
-								<div class="column">
-									<div class="title-container">
-											<img src="images/process/pic5.jpg" style="width:100%">
-										<div class="overlay">Enjoying the music</div>
-									</div>
-									<div class="title-container">
-											<img src="images/process/pic12.jpg" style="width:100%">
-										<div class="overlay">Coding!!!</div>
-									</div>
-									<div class="title-container">
-											<img src="images/process/pic7.jpg" style="width:100%">
-										<div class="overlay">Inspire each other</div>
-									</div>
-								</div>
-								<div class="column">
-									<div class="title-container">
-											<img src="images/process/pic8.jpg" style="width:100%">
-										<div class="overlay">Trying out a specific tune</div>
-									</div>
-									<div class="title-container">
-											<img src="images/process/pic10.jpg" style="width:100%">
-										<div class="overlay">Curious minds</div>
-									</div>
-								</div>
+							<div class ="img-container">
+								<img class="images" src="images/process/img1.jpg" alt="Hello world demo">
+								<img class="images" src="images/process/img2.jpg" alt="Final testing before Forskar Fredag">
+								<img class="images" src="images/process/img3.jpg" alt="First successful 3D knob">
+								<img class="images" src="images/process/img4.jpg" alt="Inspiring high school student (Forskar Fredag)">
+								<img class="images" src="images/process/img5.jpg" alt="Mistakes are okay">
+								<img class="images" src="images/process/img6.jpg" alt="Enjoying the music (Forskar Fredag)">
+								<img class="images" src="images/process/img7.jpg" alt="Inspiring each other (Forskar Fredag)">
+								<img class="images" src="images/process/img8.jpg" alt="Curious minds">
+								<img class="images" src="images/process/img9.jpg" alt="Amazing crowd at Tekniska museet">
+								<img class="images" src="images/process/img10.jpg" alt="Children having fun with the visual experience (Tekniska Museet)">
+								<img class="images" src="images/process/img11.jpg" alt="Building tower with fiducials? (Tekniska Museet)">
+								<img class="images" src="images/process/img12.jpg" alt="Little knob.">
+							</div>
+							<!-- The Modal -->
+							<div id="theModal" class="modal">
+								<!-- The Close Button -->
+								<span class="close" onclick="document.getElementById('theModal').style.display='none'">&times;</span>
+								<!-- Modal Content (The Image) -->
+								<img class="modal-content" id="img01">
+								<!-- Modal Caption (Image Text) -->
+								<div id="caption"></div>
 							</div>
 						</div>
 					</section>
@@ -283,6 +247,7 @@
 			<script src="assets/js/main.js"></script>
 			<!-- Scroll up script -->
 			<script src="assets/js/scroll.js"></script>
+			<script src="assets/js/modal.js"></script>
 
 	</body>
 </html>
